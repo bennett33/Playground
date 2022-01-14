@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <style>
+
+    #play {
+        width: 800px; margin: 20px auto;
+        display: flex; justify-content: center; flex-wrap: wrap;}
+
+    .box {
+        border: solid 2px #000; border-radius: 10px;
+        width: 100px; height: 120px; margin: 10px;}
+
+    .blue .box {
+        background: rgb(38, 0, 255);}
+
+    .purple .box {
+        background: rgb(153, 0, 255);}
+
+    .red .box {
+        background: rgb(255, 0, 0);}
+
+    .orange .box {
+        background: rgb(247, 104, 9);}
+
+    .yellow .box {
+        background: rgb(255, 230, 0);}
+
+    .green .box {
+        background: rgb(9, 255, 0);}
+
+    
+    </style>
+</head>
+<body>
+    <div class="{{color}}" id="play">
+        {% for i in range(num) %}
+            <div class="box"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
